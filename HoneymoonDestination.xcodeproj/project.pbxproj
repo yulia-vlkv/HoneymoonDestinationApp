@@ -16,6 +16,7 @@
 		EFBD8E8E2A66CE6F00429A07 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E8D2A66CE6F00429A07 /* HoneymoonData.swift */; };
 		EFBD8E942A66CF3000429A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E932A66CF3000429A07 /* CardView.swift */; };
 		EFBD8E962A66D32000429A07 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E952A66D32000429A07 /* HeaderView.swift */; };
+		EFBD8E982A66D49D00429A07 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E972A66D49D00429A07 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EFBD8E8D2A66CE6F00429A07 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		EFBD8E932A66CF3000429A07 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		EFBD8E952A66D32000429A07 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EFBD8E972A66D49D00429A07 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				EFBD8E7B2A63B77300429A07 /* ContentView.swift */,
 				EFBD8E932A66CF3000429A07 /* CardView.swift */,
 				EFBD8E952A66D32000429A07 /* HeaderView.swift */,
+				EFBD8E972A66D49D00429A07 /* FooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBD8E8B2A66CE0100429A07 /* HoneymoonModel.swift in Sources */,
+				EFBD8E982A66D49D00429A07 /* FooterView.swift in Sources */,
 				EFBD8E962A66D32000429A07 /* HeaderView.swift in Sources */,
 				EFBD8E7C2A63B77300429A07 /* ContentView.swift in Sources */,
 				EFBD8E7A2A63B77300429A07 /* HoneymoonDestinationApp.swift in Sources */,

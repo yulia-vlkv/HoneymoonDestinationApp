@@ -19,6 +19,8 @@ struct ContentView: View {
             //Fixme: Add paddint to the cards
             
             Spacer()
+            
+            FooterView()
         }
     }
 }
