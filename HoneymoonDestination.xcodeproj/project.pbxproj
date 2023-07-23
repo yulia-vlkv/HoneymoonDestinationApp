@@ -20,6 +20,9 @@
 		EFBD8E9B2A6825F100429A07 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E9A2A6825F100429A07 /* HeaderComponent.swift */; };
 		EFBD8E9D2A68268200429A07 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E9C2A68268200429A07 /* GuideComponent.swift */; };
 		EFBD8E9F2A68284200429A07 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8E9E2A68284200429A07 /* GuideView.swift */; };
+		EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA02A6D29B100429A07 /* InfoView.swift */; };
+		EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */; };
+		EFBD8EA62A6D2C8B00429A07 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		EFBD8E9A2A6825F100429A07 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		EFBD8E9C2A68268200429A07 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		EFBD8E9E2A68284200429A07 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		EFBD8EA02A6D29B100429A07 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +76,16 @@
 		EFBD8E782A63B77300429A07 /* HoneymoonDestination */ = {
 			isa = PBXGroup;
 			children = (
+				EFBD8E8F2A66CE8000429A07 /* Data */,
+				EFBD8E8C2A66CE0800429A07 /* Model */,
+				EFBD8E902A66CF0900429A07 /* View */,
+				EFBD8EA42A6D2AA700429A07 /* Modifier */,
 				EFBD8E992A6825CF00429A07 /* Component */,
 				EFBD8E892A63BA5100429A07 /* Info.plist */,
 				EFBD8E872A63B9F500429A07 /* Sounds */,
 				EFBD8E792A63B77300429A07 /* HoneymoonDestinationApp.swift */,
-				EFBD8E902A66CF0900429A07 /* View */,
 				EFBD8E7D2A63B77500429A07 /* Assets.xcassets */,
 				EFBD8E7F2A63B77500429A07 /* Preview Content */,
-				EFBD8E8C2A66CE0800429A07 /* Model */,
-				EFBD8E8F2A66CE8000429A07 /* Data */,
 			);
 			path = HoneymoonDestination;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 				EFBD8E952A66D32000429A07 /* HeaderView.swift */,
 				EFBD8E972A66D49D00429A07 /* FooterView.swift */,
 				EFBD8E9E2A68284200429A07 /* GuideView.swift */,
+				EFBD8EA02A6D29B100429A07 /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +134,15 @@
 				EFBD8E9C2A68268200429A07 /* GuideComponent.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		EFBD8EA42A6D2AA700429A07 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */,
+				EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBD8E8B2A66CE0100429A07 /* HoneymoonModel.swift in Sources */,
+				EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */,
 				EFBD8E982A66D49D00429A07 /* FooterView.swift in Sources */,
+				EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */,
 				EFBD8E962A66D32000429A07 /* HeaderView.swift in Sources */,
 				EFBD8E7C2A63B77300429A07 /* ContentView.swift in Sources */,
+				EFBD8EA62A6D2C8B00429A07 /* ButtonModifier.swift in Sources */,
 				EFBD8E9B2A6825F100429A07 /* HeaderComponent.swift in Sources */,
 				EFBD8E7A2A63B77300429A07 /* HoneymoonDestinationApp.swift in Sources */,
 				EFBD8E8E2A66CE6F00429A07 /* HoneymoonData.swift in Sources */,
