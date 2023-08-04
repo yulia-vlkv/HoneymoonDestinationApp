@@ -15,10 +15,11 @@ struct ContentView: View {
     @State var showInfo: Bool = false
     @GestureState private var dragState = DragState.inactive
     private var dragAreaThreshold: CGFloat = 65.0
+    @State private var lastCardIndex: Int = 1
     
     // MARK: - Card Views
     
-    var cardViews: [CardView] = {
+    @State var cardViews: [CardView] = {
         var views = [CardView]()
         for index in 0..<2 {
             views.append(CardView(honeymoon: honeymoonData[index]))
@@ -26,6 +27,15 @@ struct ContentView: View {
         return views
     }()
     
+    // MARK: - Move the card
+    
+    private func moveCards() {
+        cardViews.removeFirst()
+        self.lastCardIndex += 1
+        let honeymoon = honeymoonData[lastCardIndex % honeymoonData.count]
+        let newCardView = CardView(honeymoon: honeymoon)
+        cardViews.append(newCardView)
+    }
     
     // MARK: - Top Card
     private func isTopCard(cardView: CardView) -> Bool {
@@ -43,12 +53,12 @@ struct ContentView: View {
         case dragging(translation: CGSize)
         
         var translation: CGSize {
-          switch self {
-          case .inactive, .pressing:
-            return .zero
-          case .dragging(let translation):
-            return translation
-          }
+            switch self {
+            case .inactive, .pressing:
+                return .zero
+            case .dragging(let translation):
+                return translation
+            }
         }
         
         var isDragging: Bool {
@@ -116,12 +126,19 @@ struct ContentView: View {
                                     break
                                 }
                             })
+                                .onEnded({ (value ) in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    
+                                    if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
+                                        self.moveCards()
+                                    }
+                                })
                         )
                 }
             }
             .padding(.horizontal)
-            
-            //Fixme: Add padding to the cards
             
             Spacer()
             
@@ -131,10 +148,10 @@ struct ContentView: View {
                 .animation(.default, value: dragState.isDragging ? true : false)
         }
         .alert(isPresented: $showAlert) {
-          Alert(
-            title: Text("SUCCESS"),
-            message: Text("Wishing a lovely and most precious of the times together for the amazing couple."),
-            dismissButton: .default(Text("Happy Honeymoon!")))
+            Alert(
+                title: Text("SUCCESS"),
+                message: Text("Wishing a lovely and most precious of the times together for the amazing couple."),
+                dismissButton: .default(Text("Happy Honeymoon!")))
         }
     }
 }
