@@ -23,6 +23,7 @@
 		EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA02A6D29B100429A07 /* InfoView.swift */; };
 		EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */; };
 		EFBD8EA62A6D2C8B00429A07 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */; };
+		EFDF21112A7D2A2700A7444E /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EFBD8EA02A6D29B100429A07 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */,
 				EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */,
+				EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */,
 				EFBD8E982A66D49D00429A07 /* FooterView.swift in Sources */,
 				EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */,
+				EFDF21112A7D2A2700A7444E /* SymbolModifier.swift in Sources */,
 				EFBD8E962A66D32000429A07 /* HeaderView.swift in Sources */,
 				EFBD8E7C2A63B77300429A07 /* ContentView.swift in Sources */,
 				EFBD8EA62A6D2C8B00429A07 /* ButtonModifier.swift in Sources */,
