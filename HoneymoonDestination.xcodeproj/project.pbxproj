@@ -23,6 +23,7 @@
 		EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA02A6D29B100429A07 /* InfoView.swift */; };
 		EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */; };
 		EFBD8EA62A6D2C8B00429A07 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */; };
+		EFCDBE4D2A828ADE00D137F1 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDBE4C2A828ADE00D137F1 /* CardTransition.swift */; };
 		EFDF21112A7D2A2700A7444E /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		EFBD8EA02A6D29B100429A07 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		EFBD8EA22A6D2A6900429A07 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		EFBD8EA52A6D2C8B00429A07 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		EFCDBE4C2A828ADE00D137F1 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 		EFBD8E782A63B77300429A07 /* HoneymoonDestination */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDBE4B2A828AB700D137F1 /* Extension */,
 				EFBD8E8F2A66CE8000429A07 /* Data */,
 				EFBD8E8C2A66CE0800429A07 /* Model */,
 				EFBD8E902A66CF0900429A07 /* View */,
@@ -146,6 +149,14 @@
 				EFDF21102A7D2A2700A7444E /* SymbolModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		EFCDBE4B2A828AB700D137F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDBE4C2A828ADE00D137F1 /* CardTransition.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				EFBD8EA12A6D29B100429A07 /* InfoView.swift in Sources */,
 				EFBD8E982A66D49D00429A07 /* FooterView.swift in Sources */,
 				EFBD8EA32A6D2A6900429A07 /* TitleModifier.swift in Sources */,
+				EFCDBE4D2A828ADE00D137F1 /* CardTransition.swift in Sources */,
 				EFDF21112A7D2A2700A7444E /* SymbolModifier.swift in Sources */,
 				EFBD8E962A66D32000429A07 /* HeaderView.swift in Sources */,
 				EFBD8E7C2A63B77300429A07 /* ContentView.swift in Sources */,
