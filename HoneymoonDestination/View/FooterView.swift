@@ -11,6 +11,7 @@ struct FooterView: View {
     // MARK: - Properties
     
     @Binding var showBookingAlert: Bool
+
     
     // MARK: - Body
     var body: some View {
@@ -21,6 +22,7 @@ struct FooterView: View {
             Spacer()
             
             Button(action: {
+                playSound(sound: "sound-click", type: "mp3")
                 self.showBookingAlert.toggle()
             }, label: {
                 Text("Book Destination".uppercased())
